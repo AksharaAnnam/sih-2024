@@ -7,9 +7,10 @@ import fs from "fs";
 //login User
 const loginUser = async (req, res) => {
   const { email, password } = req.body;
+  console.log(email + " " + password);
   try {
     const user = await userModel.findOne({ email });
-
+    console.log(user);
     if (!user) {
       return res.json({ success: false, message: "User doesn't exists" });
     }
@@ -20,10 +21,12 @@ const loginUser = async (req, res) => {
       return res.json({ success: false, message: "Invalid credentials" });
     }
 
-    const token = createToken(user._id);
-    res.json({ success: true, token });
+    // const token = createToken(user._id);
+    // res.json({ success: true, token });
+    console.log("success");
+    res.json({ success: true, message: "logged in" });
   } catch (error) {
-    console.log(error);
+    console.log("error");
     res.json({ success: false, message: "Error" });
   }
 };
@@ -35,7 +38,9 @@ const createToken = (id) => {
 
 //register User
 const registerUser = async (req, res) => {
+  console.log(req.body);
   let image_filename = `${req.file.filename}`;
+  console.log(image_filename);
   const {
     name,
     email,
@@ -94,7 +99,7 @@ const registerUser = async (req, res) => {
       image: image_filename,
     });
 
-    const user = await newUser.save();
+    await newUser.save();
     // const token = createToken(user._id);
     // res.json({ success: true, token });
     res.json({ success: true });
