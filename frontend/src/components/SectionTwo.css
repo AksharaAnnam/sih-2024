@@ -1,0 +1,42 @@
+.my-card-one{
+    background-image: url('./SIH_7.PNG');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
+.my-card-two{
+    background-image: url('./SIH_8.PNG');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
+.my-card-three{
+    background-image: url('./SIH_9.PNG');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+}
+
+.overtext {
+    color: black;
+    background: rgba(151, 149, 149, 0.5); /* Optional: To add a semi-transparent background behind the text */
+    width:100%;
+    /* height:100%; */
+    height:max(20vw,120px);
+    padding:max(5px,1.5vw) max(4px,3vw);
+    cursor: pointer;
+  }
+
+.overtext:hover{
+    margin:max(4px,1.3vw) max(4px,3.8vw);
+}
+
+.text-style{
+    font-size: max(13px,2.2vw);
+    font-weight: 700;
+}
+
+.heading{
+    font-size: max(20px,2.6vw);
+    font-weight: 600;
+}

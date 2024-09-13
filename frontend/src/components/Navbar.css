@@ -1,0 +1,40 @@
+.nav-item{
+    padding:max(8px,1.5vw) max(15px,1.4vw);
+    font-size: max(12px,1.4vw);
+    color:white;
+}
+
+.nav-item:hover{
+    color:rgb(155, 151, 151);
+    cursor: pointer;
+}
+
+.logo{
+    width:max(60px,8vw);
+}
+
+.platypi-regular {
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.project-title{
+    font-size: min(22px,3vh);
+    font-weight: 700;
+}
+
+.toggle-button{
+    width:max(40px,6vw);
+    height:max(30px,4vw);
+    padding:0px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/%3E%3C/svg%3E");
+    width:max(25px,5vw);
+    height:max(15px,3vw);
+    margin:0px;
+  }
+  
